@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 1%;
+}
+.productImage {
+    width: 200px;
+    height: 300px
+}
+
+.addToCart {
+    background: red;
+    color: #fff;
+    padding: 8px 0;
+    cursor: pointer;
+    text-align: center;
+}

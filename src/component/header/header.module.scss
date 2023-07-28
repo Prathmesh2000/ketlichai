@@ -1,0 +1,44 @@
+.container {
+    width: calc( 100svw - 2% );
+    display: flex;
+    flex-direction: row;
+    background: red;
+    padding: 1% 1%;
+    justify-content: space-around;
+    position: sticky;
+}
+
+.leftContainer {
+    width: 10%;
+    background: #fff;
+}
+
+.middle{
+    width: 80%;
+}
+
+.middleContainer {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    
+    .middleOption{
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+}
+
+
+.rightContainer {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    .icon {
+        width: 25px;
+        height: 25px;
+        margin: 0 0.5rem;
+        cursor: pointer;
+    }
+}

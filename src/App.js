@@ -1,23 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './component/header';
+import ProductSection from './component/poductSection';
+import HeroSection from './component/herosection';
+import Footer from './component/footer';
 
 function App() {
+
+  const tempData = [
+    {
+      url: "https://chaayos.com/cdn/shop/files/81-AI_kbHnL._SX679.jpg?v=1683542634",
+      name: "product 1",
+      price: "1000",
+    },
+    {
+      url: "https://chaayos.com/cdn/shop/files/81-AI_kbHnL._SX679.jpg?v=1683542634",
+      name: "product 2",
+      price: "1000",
+    },
+    {
+      url: "https://chaayos.com/cdn/shop/files/81-AI_kbHnL._SX679.jpg?v=1683542634",
+      name: "product 3",
+      price: "1000",
+    },
+    {
+      url: "https://chaayos.com/cdn/shop/files/81-AI_kbHnL._SX679.jpg?v=1683542634",
+      name: "product 3",
+      price: "1000",
+    },
+    {
+      url: "https://chaayos.com/cdn/shop/files/81-AI_kbHnL._SX679.jpg?v=1683542634",
+      name: "product 1",
+      price: "1000",
+    },
+    {
+      url: "https://chaayos.com/cdn/shop/files/81-AI_kbHnL._SX679.jpg?v=1683542634",
+      name: "product 2",
+      price: "1000",
+    },
+    {
+      url: "https://chaayos.com/cdn/shop/files/81-AI_kbHnL._SX679.jpg?v=1683542634",
+      name: "product 3",
+      price: "1000",
+    },
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <Header />
       </header>
+      <section>
+        <HeroSection />
+      </section>
+      <section>
+        <ProductSection
+          productData={tempData}
+        />
+      </section>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
